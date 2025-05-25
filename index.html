@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blitz Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            colors: {
+              blitzYellow: '#FFD700', // Accent color, works on both light and dark
+              
+              // Dark Mode Palette (primarily uses blitzGray and blitzBlack)
+              blitzBlack: '#121212', 
+              blitzGray: {
+                light: '#374151',    // Used for subtle borders or elements on dark cards
+                DEFAULT: '#1F2937',  // Main card background in dark mode
+                dark: '#111827',     // Slightly darker elements, or main page bg if not darker
+                darker: '#0D1117',   // Main page background for dark mode
+              },
+
+              // Light Mode Palette
+              blitzLight: {
+                bg: '#FFFFFF',            // Main background for light mode
+                card: '#F9FAFB',          // Card background for light mode (very light gray)
+                // card: '#FFFFFF', // Alternative: white cards on slightly off-white bg
+                // bg: '#F3F4F6',      // Alternative: slightly off-white bg
+
+                text: '#1F2937',          // Primary text color for light mode (dark gray)
+                subtleText: '#4B5563',    // Secondary/less important text (medium gray)
+                border: '#E5E7EB',        // Border color for light mode
+                hoverBorder: '#D1D5DB',   // Border color for hover states in light mode
+                inputBg: '#FFFFFF',       // Input background for light mode
+                inputBorder: '#D1D5DB',   // Input border for light mode
+              },
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-blitzLight-bg dark:bg-blitzGray-darker"> <!-- Apply base bg for light and dark -->
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>

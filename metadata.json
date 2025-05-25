@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Blitz Delivery MVP",
+  "description": "MVP for Blitz, a smart last-mile delivery platform. This version focuses on core order posting, footman/rider claiming and delivery, earnings, and leaderboards with manual confirmations. Includes photo support, KES currency, and basic cost calculation.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
